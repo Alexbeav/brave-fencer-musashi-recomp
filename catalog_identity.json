@@ -1,0 +1,47 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Brave Fencer Musashi",
+    "id": "SLUS-00726",
+    "boot_exe": "SLUS_007.26"
+  },
+  "marketing": {
+    "description": "Brave Fencer Musashi recompiled for modern systems using psxrecomp.",
+    "publisher": "Squaresoft",
+    "year": "1998",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Brave Fencer Musashi (USA).cue",
+    "bin_name": "Brave Fencer Musashi (USA) (Track 1).bin",
+    "track_counts": [
+      4
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 364846944,
+      "md5": "838e9ecf8b4e4810f3f82228b40e77d8",
+      "sha1": "b44f0f0a19936f23b26188b658e13201a6a9c211",
+      "sha256": "5455c324a026e22a8e53ca38f673e9e96e2cf653686ae553f933683aa16d4401",
+      "crc32": "c238191b"
+    },
+    "disc_fp": "9e915c7a498539df1721f933d5135a7eeea95c98b8bf04109e3e56a4e124f880"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80010000",
+    "text_size": "0x00064800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 883,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
